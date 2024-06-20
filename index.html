@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./new-nav.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="sidebar">
+        <nav>
+
+            <div class="side-nav">
+                <div class="sideflex first">Logo</div>
+
+                <div class="sideflex second">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="side-nav-cont">
+
+                <div class="side-menus f001">
+                    <a href="./#">Home</a>
+                    <a href="./#">About</a>
+                </div>
+
+            </div>
+    
+            <div class="side-dropdown">
+                <a>Services <i class="fa-solid fa-angle-down"></i></a>
+
+                <div class="side-dropdown-cont">
+                    <a href="./#">Front-End Development</a>
+                    <a href="./#">Back-End Development</a>
+                    <a href="./#">Deployment</a>
+                    <a href="./#">Advanced JavaScript</a>
+                    <a href="./#">Front-End Frameworks</a>
+                </div>
+            </div>
+                
+    
+            <div class="side-menus f002">
+                <a href="./#">Projects</a>
+                <a href="./#">Login</a>
+            </div>
+
+            <div class="get-started">
+                <a href="./#">Get Started</a>
+            </div>
+    
+        </nav>
+    </header>
+    
+    <!-- second nav -->
+        <header class="main-nav">
+            <nav>
+    
+                <div class="mainflex one">Logo</div>
+    
+                <div class="mainflex two">
+                    <a href="./#">Home</a>
+                    <a href="./#">About</a>
+    
+                    <div class="dropdown">
+                        <button>Services <i class="fa-solid fa-angle-down"></i></button>
+    
+                        <div class="dropdown-cont">
+                            <a href="./#">Front-End Development</a>
+                            <a href="./#">Back-End Development</a>
+                            <a href="./#">Deployment</a>
+                            <a href="./#">Advanced JavaScript</a>
+                            <a href="./#">Front-End Frameworks</a>
+                        </div>
+                    </div>
+    
+                    <a href="./#">Projects</a>
+                </div>
+    
+                <div class="mainflex three">
+                    <a href="./#">Login</a>
+
+                    <div class="get-btn">
+                        <a href="./#">Get Started</a>
+                    </div>
+                </div>
+    
+                <div class="mainflex four">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <script>
+
+        const sidebar = document.querySelector(".sidebar");
+
+        const open = document.querySelector(".four");
+
+        const close = document.querySelector(".second");
+
+        open.onclick = () =>{
+            sidebar.style.display = 'block';
+        }
+
+        close.onclick = () =>{
+            sidebar.style.display = 'none';
+        }
+
+
+    </script>
+    
+</body>
+
+</html>

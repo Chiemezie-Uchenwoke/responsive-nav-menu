@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.sidebar{
+    width: 100%;
+    background-color: rgb(54, 54, 239);
+    position: fixed;
+    height: 100vh;
+    display: none;
+}
+
+.side-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #03076c;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+.side-nav i{
+    font-size: x-large;
+}
+
+.first{
+    background-color: #bd202e;
+    padding: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.side-nav-cont{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.side-menus a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0rem;
+}
+
+.side-dropdown{
+    padding: 0.5rem 0rem;
+}
+
+.side-dropdown a{
+    color: white;
+    padding: 0rem 1rem;
+    font-weight: 500; 
+}
+
+.side-dropdown-cont{
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    display: none;
+}
+
+.side-dropdown-cont a{
+    color: black;
+    display: block;
+    padding: 0.5rem 0rem;
+    text-decoration: none;
+}
+
+.side-dropdown-cont a:hover{
+    background-color: #bd202e;
+    color: white;
+}
+
+.side-dropdown:hover .side-dropdown-cont{
+    display: block;
+}
+
+.f002{
+    padding: 0rem 1rem;
+}
+
+.get-started{
+    background-color: #bd202e;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.get-started a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1000px){
+    header.sidebar{
+        display: none !important;
+    }
+}
